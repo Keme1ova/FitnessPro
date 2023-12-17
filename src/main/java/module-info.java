@@ -8,8 +8,9 @@ module com.example.fitnespro {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
+    requires mysql.connector.j;
 
     opens com.example.fitnespro to javafx.fxml;
     exports com.example.fitnespro;
