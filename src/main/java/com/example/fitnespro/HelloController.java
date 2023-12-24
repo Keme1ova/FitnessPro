@@ -46,7 +46,7 @@ public class HelloController {
     }
 
     private void loginUser(String loginText, String loginPassword) {
-        DataBaseHandler dbHandler = new DataBaseHandler();
+        LOGIN dbHandler = new LOGIN();
         User user = new User();
         user.setUserName(loginText);
         user.setPassword(loginPassword);

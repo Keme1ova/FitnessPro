@@ -6,10 +6,11 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="1300.0" prefWidth="1769.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnespro.HomePageController">
+<AnchorPane prefHeight="1000.0" prefWidth="1480.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnespro.HomePageController">
    <children>
-      <TreeView fx:id="menu" centerShape="false" nodeOrientation="LEFT_TO_RIGHT" onContextMenuRequested="#treeMenu" onMouseClicked="#treeMenu" prefHeight="1330.0" prefWidth="260.0" style="-fx-background-color: #1172B9;" styleClass="ba">
+      <TreeView fx:id="menu" centerShape="false" nodeOrientation="LEFT_TO_RIGHT" onContextMenuRequested="#treeMenu" onMouseClicked="#treeMenu" prefHeight="800.0" prefWidth="260.0" styleClass="tree-cell" stylesheets="@base1.css">
          <padding>
             <Insets top=" 80.0" />
          </padding></TreeView>
@@ -18,6 +19,52 @@
             <Image url="@images/LOGO.png" />
          </image>
       </ImageView>
-      <Button fx:id="exitButton" layoutX="14.0" layoutY="701.0" mnemonicParsing="false" onAction="#exit" styleClass="exitBtn" text="Exit" />
+      <Button fx:id="exitButton" layoutX="49.0" layoutY="698.0" mnemonicParsing="false" styleClass="exitBtn" text="Exit" />
+      <ImageView fitHeight="184.0" fitWidth="302.0" layoutX="395.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Rectangle 7.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="395.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-font-weight: 400;" text="Home(Gallery)" />
+      <ImageView fitHeight="184.0" fitWidth="302.0" layoutX="695.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Rectangle 8.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="184.0" fitWidth="302.0" layoutX="995.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Rectangle 9.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="184.0" fitWidth="302.0" layoutX="395.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Rectangle 10.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="184.0" fitWidth="302.0" layoutX="695.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Rectangle 11.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="184.0" fitWidth="302.0" layoutX="995.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Rectangle 12.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="184.0" fitWidth="302.0" layoutX="395.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Rectangle 13.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="184.0" fitWidth="302.0" layoutX="695.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Rectangle 14.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="184.0" fitWidth="302.0" layoutX="995.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Rectangle 12.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

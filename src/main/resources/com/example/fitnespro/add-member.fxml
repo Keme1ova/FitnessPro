@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="./java/css/styling.css"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1480.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnespro.AddMemberController">
+    <children>
+        <BorderPane prefHeight="999.0" prefWidth="1483.0">
+            <left>
+                <VBox prefHeight="1022.0" prefWidth="260.0" style="-fx-background-color: #1172B9;" BorderPane.alignment="CENTER" />
+            </left>
+            <VBox>
+                <fx:include source="base.fxml" />
+            </VBox>
+            <center>
+                <VBox prefHeight="454.0" prefWidth="1127.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane prefHeight="158.0" prefWidth="1223.0">
+                            <children>
+                                <TextField layoutX="48.0" layoutY="26.0" prefHeight="59.0" prefWidth="689.0" promptText="SEARCH..." style="-fx-border-color: #1172B9;">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                </TextField>
+                                <Text fill="#1172b9" layoutX="981.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Aijamal (admin)">
+                                    <font>
+                                        <Font name="SansSerif Italic" size="24.0" />
+                                    </font>
+                                </Text>
+                                <Button layoutX="661.0" layoutY="26.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="117.0" style="-fx-background-color: #1172B9;" styleClass="search-button" stylesheets="@base1.css" />
+                                <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="703.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/search.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="955.0" prefWidth="1330.0">
+                            <children>
+                                <Label alignment="BASELINE_RIGHT" layoutX="-31.0" layoutY="20.0" prefHeight="46.0" prefWidth="317.0" text="ADD MEMBER +">
+                                    <font>
+                                        <Font name="SansSerif Regular" size="30.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="20.0" top="10.0" />
+                                    </padding>
+                                </Label>
+                                <BorderPane layoutX="644.0" layoutY="84.0" prefHeight="206.0" prefWidth="450.0" style="-fx-background-color: white;" styleClass="box1-information" stylesheets="@base1.css">
+                                    <top>
+                                        <Label prefHeight="45.0" prefWidth="450.0" text="CONTACT INFORMATION" BorderPane.alignment="CENTER">
+                                            <font>
+                                                <Font name="SansSerif Regular" size="16.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets left="20.0" top="10.0" />
+                                            </padding>
+                                        </Label>
+                                    </top>
+                                    <center>
+                                        <Pane layoutY="10.0" prefHeight="140.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <TextField fx:id="numField" layoutX="35.0" layoutY="14.0" prefHeight="36.0" prefWidth="373.0" promptText="NUMBER">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="20.0" />
+                                                    </padding></TextField>
+                                                <TextField fx:id="membershipField" layoutX="35.0" layoutY="58.0" prefHeight="36.0" prefWidth="373.0" promptText="MEMBERSHIP">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="20.0" />
+                                                    </padding></TextField>
+                                    <TextField fx:id="genderField" layoutX="35.0" layoutY="104.0" prefHeight="36.0" prefWidth="375.0" promptText="GENDER">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </TextField>
+                                            </children>
+                                        </Pane>
+                                    </center></BorderPane>
+                                <BorderPane layoutX="55.0" layoutY="84.0" prefHeight="206.0" prefWidth="450.0" style="-fx-background-color: white;" styleClass="box1-information" stylesheets="@base1.css">
+                                    <top>
+                                        <Label prefHeight="45.0" prefWidth="450.0" stylesheets="@base1.css" text="PERSONAL INFORMATION" BorderPane.alignment="CENTER">
+                                            <font>
+                                                <Font name="SansSerif Regular" size="16.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets left="20.0" top="10.0" />
+                                            </padding>
+                                        </Label>
+                                    </top>
+                                    <center>
+                                        <Pane layoutX="1.0" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <TextField fx:id="nameField" layoutX="20.0" prefHeight="32.0" prefWidth="363.0" promptText="NAME" styleClass="input-box" stylesheets="@base1.css">
+                                                    <font>
+                                                        <Font name="SansSerif Regular" size="18.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="20.0" />
+                                                    </padding>
+                                                </TextField>
+                                    <TextField fx:id="lastNameField" layoutX="20.0" layoutY="45.0" prefHeight="32.0" prefWidth="363.0" promptText="LASTNAME" styleClass="input-box" stylesheets="@base1.css">
+                                       <font>
+                                          <Font name="SansSerif Regular" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </TextField>
+                                            </children>
+                                        </Pane>
+                                    </center>
+                                </BorderPane>
+                                <BorderPane layoutX="55.0" layoutY="332.0" prefHeight="188.0" prefWidth="958.0" style="-fx-background-color: white;" styleClass="box1-information" stylesheets="@base1.css">
+                                    <top>
+                                        <Label layoutX="10.0" prefHeight="65.0" prefWidth="931.0" text="OTHER INFORMATION" BorderPane.alignment="CENTER">
+                                            <font>
+                                                <Font name="SansSerif Regular" size="16.0" />
+                                            </font>
+                                        </Label>
+                                    </top>
+                                    <center>
+                                        <Pane prefHeight="101.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+                                            <children>
+                                                <TextField fx:id="groupField" layoutX="33.0" layoutY="-4.0" prefHeight="31.0" prefWidth="303.0" promptText="GROUP">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="20.0" />
+                                                    </padding>
+                                                </TextField>
+                                                <TextField fx:id="trainerField" layoutX="540.0" layoutY="-4.0" prefHeight="31.0" prefWidth="303.0" promptText="TRAINER">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="20.0" />
+                                                    </padding>
+                                                </TextField>
+                                                <DatePicker fx:id="startField" layoutX="30.0" layoutY="50.0" prefHeight="50.0" prefWidth="385.0" promptText="START">
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                    <padding>
+                                                        <Insets left="18.0" />
+                                                    </padding></DatePicker>
+                                                <DatePicker fx:id="endField" layoutX="539.0" layoutY="47.0" prefHeight="50.0" prefWidth="385.0" promptText="END">
+                                                    <padding>
+                                                        <Insets left="18.0" />
+                                                    </padding></DatePicker>
+                                            </children></Pane>
+                                    </center></BorderPane>
+                        <Button layoutX="1046.0" layoutY="361.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="32.0" prefWidth="67.0" text="CLEAR" />
+                        <Button fx:id="addBtn" layoutX="1048.0" layoutY="433.0" mnemonicParsing="false" onAction="#addMember" prefHeight="37.0" prefWidth="70.0" text="ADD" />
+                        <Label fx:id="resultLabel" layoutX="494.0" layoutY="558.0" prefHeight="17.0" prefWidth="314.0" />
+                            </children>
+                        </AnchorPane>
+                    </children></VBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

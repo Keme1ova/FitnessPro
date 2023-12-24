@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnespro.MemberProfileController">
+   <Pane prefHeight="800.0" prefWidth="1275.0">
+      <children>
+         <VBox prefHeight="800.0" prefWidth="230.0">
+            <fx:include source="base.fxml" />
+         </VBox>
+         <Pane layoutX="285.0" layoutY="210.0" prefHeight="509.0" prefWidth="933.0" style="-fx-background-color: WHITE; -fx-border-radius: 99;" styleClass="box" stylesheets="@base1.css">
+            <children>
+               <Text layoutX="69.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="69.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SURNAME">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="69.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="69.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACT">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="450.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMBERSHIP">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="450.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GROUP">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="450.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRAINER">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="450.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="START">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="450.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="END">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="69.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENDER">
+                  <font>
+                     <Font name="System Bold" size="18.0" />
+                  </font>
+               </Text>
+               <Text layoutX="69.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MITGLIEDERINFORMATIONEN">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Text>
+               <TextField fx:id="idField" layoutX="69.0" layoutY="110.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="nameField" layoutX="69.0" layoutY="190.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="surnameField" layoutX="69.0" layoutY="270.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="contactField" layoutX="69.0" layoutY="350.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="genderField" layoutX="69.0" layoutY="430.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="membershipField" layoutX="450.0" layoutY="110.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="trainerField" layoutX="450.0" layoutY="190.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="startdateField" layoutX="450.0" layoutY="270.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="enddateField" layoutX="450.0" layoutY="350.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="groupField" layoutX="450.0" layoutY="430.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </TextField>
+            </children></Pane>
+         <Text layoutX="285.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MITGLIEDERPROFIL">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Text>
+         <TextField fx:id="searchField" layoutX="285.0" layoutY="35.0" prefHeight="46.0" prefWidth="308.0" />
+         <Button layoutX="573.0" layoutY="35.0" mnemonicParsing="false" onAction="#searchByNameAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #1172B9;" text="SUCHE" textFill="WHITE">
+            <font>
+               <Font name="SansSerif Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button layoutX="1061.0" layoutY="149.0" mnemonicParsing="false" onAction="#updateMemberAction" prefHeight="39.0" prefWidth="156.0" style="-fx-background-color: #1172B9;" styleClass="box" stylesheets="@base1.css" text="Update" textFill="WHITE">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <Button layoutX="849.0" layoutY="149.0" mnemonicParsing="false" onAction="#deleteMemberAction" prefHeight="39.0" prefWidth="156.0" style="-fx-background-color: #1172B9;" styleClass="box" stylesheets="@base1.css" text="Löschen" textFill="WHITE">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+      </children>
+   </Pane>
+</ScrollPane>

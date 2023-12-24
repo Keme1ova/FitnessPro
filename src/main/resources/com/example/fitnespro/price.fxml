@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="./java/css/styling.css"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1472.0" prefWidth="1480.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnespro.PriceController">
+    <children>
+        <BorderPane prefHeight="1472.0" prefWidth="1483.0">
+            <left>
+                <VBox prefHeight="1421.0" prefWidth="260.0" style="-fx-background-color: #1172B9;" BorderPane.alignment="CENTER" />
+            </left>
+            <VBox>
+                <fx:include source="base.fxml" />
+            </VBox>
+            <center>
+                <VBox prefHeight="454.0" prefWidth="1127.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane prefHeight="43.0" prefWidth="1223.0">
+                            <children>
+                                <Text fill="#1172b9" layoutX="981.0" layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Aijamal (admin)">
+                                    <font>
+                                        <Font name="SansSerif Italic" size="24.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="1267.0" prefWidth="1223.0">
+                            <children>
+                                <Label alignment="BASELINE_RIGHT" layoutX="30.0" layoutY="20.0" prefHeight="46.0" prefWidth="113.0" text="PRICE">
+                                    <font>
+                                        <Font name="SansSerif Bold" size="30.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="20.0" top="10.0" />
+                                    </padding>
+                                </Label>
+                                <Label layoutX="53.0" layoutY="110.0" text="DAUERKARTE">
+                                    <font>
+                                        <Font name="SansSerif Regular" size="25.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="53.0" layoutY="150.0" text="Persönliches Training">
+                                    <font>
+                                        <Font name="SansSerif Regular" size="25.0" />
+                                    </font>
+                                </Label>
+                                <GridPane layoutX="53.0" layoutY="201.0" prefHeight="415.0" prefWidth="641.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: #1172B9;">
+                                            <children>
+                                                <Label layoutX="75.0" layoutY="29.0" text="Die Zeit" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="SansSerif Regular" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: #1172B9;" styleClass="box-price" stylesheets="@base1.css" GridPane.columnIndex="1">
+                                            <children>
+                                                <Label layoutX="88.0" layoutY="29.0" text="Preis" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="231.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                            <children>
+                                                <Label layoutX="59.0" layoutY="29.0" text="12 000 SOM">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.rowIndex="2">
+                                            <children>
+                                                <Label layoutX="70.0" layoutY="29.0" text="3 Monate">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                            <children>
+                                                <Label layoutX="57.0" layoutY="29.0" text="34 000 SOM">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                            <children>
+                                                <Label layoutX="64.0" layoutY="29.0" text="70 000 SOM">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: BLACK;" GridPane.rowIndex="4">
+                                            <children>
+                                                <Label layoutX="84.0" layoutY="29.0" text="1 Jahr">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" styleClass="boxes" stylesheets="@base1.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                            <children>
+                                                <Label layoutX="57.0" layoutY="29.0" text="130 000 SOM">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: #1172B9;" styleClass="box-price" stylesheets="@base1.css" GridPane.columnIndex="2">
+                                            <children>
+                                                <Label layoutX="68.0" layoutY="29.0" text="Unterricht" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                            <children>
+                                                <Label layoutX="98.0" layoutY="29.0" text="12">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                            <children>
+                                                <Label layoutX="98.0" layoutY="29.0" text="36">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                            <children>
+                                                <Label layoutX="96.0" layoutY="29.0" text="72">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                            <children>
+                                                <Label layoutX="94.0" layoutY="29.0" text="144">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children></Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.rowIndex="1">
+                                            <children>
+                                                <Label layoutX="72.0" layoutY="29.0" text="1 Monat">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.rowIndex="3">
+                                            <children>
+                                                <Label layoutX="65.0" layoutY="29.0" text="6 Monate">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                </GridPane>
+                                <Label layoutX="53.0" layoutY="703.0" text="GRUPPENUNTERRICHT">
+                                    <font>
+                                        <Font name="SansSerif Regular" size="25.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="53.0" layoutY="743.0" text="Alle Gruppenaktivitäten sind inbegriffen">
+                                    <font>
+                                        <Font name="SansSerif Regular" size="25.0" />
+                                    </font>
+                                </Label>
+                                <GridPane layoutX="53.0" layoutY="810.0" prefHeight="415.0" prefWidth="641.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: #1172B9;">
+                                            <children>
+                                                <Label layoutX="75.0" layoutY="29.0" text="Die Zeit" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="SansSerif Regular" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: #1172B9;" styleClass="box-price" stylesheets="@base1.css" GridPane.columnIndex="1">
+                                            <children>
+                                                <Label layoutX="88.0" layoutY="29.0" text="Preis" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="231.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                            <children>
+                                                <Label layoutX="59.0" layoutY="29.0" text="6 000 SOM">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.rowIndex="2">
+                                            <children>
+                                                <Label layoutX="70.0" layoutY="29.0" text="3 Monate">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                            <children>
+                                                <Label layoutX="57.0" layoutY="29.0" text="16 000 SOM">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                            <children>
+                                                <Label layoutX="64.0" layoutY="29.0" text="30 000 SOM">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: BLACK;" GridPane.rowIndex="4">
+                                            <children>
+                                                <Label layoutX="84.0" layoutY="29.0" text="1 Jahr">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" styleClass="boxes" stylesheets="@base1.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                            <children>
+                                                <Label layoutX="57.0" layoutY="29.0" text="55 000 SOM">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: #1172B9;" styleClass="box-price" stylesheets="@base1.css" GridPane.columnIndex="2">
+                                            <children>
+                                                <Label layoutX="68.0" layoutY="29.0" text="Unterricht" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                            <children>
+                                                <Label layoutX="98.0" layoutY="29.0" text="12">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                            <children>
+                                                <Label layoutX="98.0" layoutY="29.0" text="36">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                            <children>
+                                                <Label layoutX="96.0" layoutY="29.0" text="72">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                            <children>
+                                                <Label layoutX="94.0" layoutY="29.0" text="144">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.rowIndex="1">
+                                            <children>
+                                                <Label layoutX="72.0" layoutY="29.0" text="1 Monat">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" GridPane.rowIndex="3">
+                                            <children>
+                                                <Label layoutX="65.0" layoutY="29.0" text="6 Monate">
+                                                    <font>
+                                                        <Font size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </AnchorPane>
+                    </children></VBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

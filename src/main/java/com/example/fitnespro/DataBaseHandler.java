@@ -1,50 +1,57 @@
 package com.example.fitnespro;
 
-import java.sql.Connection;
+import java.sql.*;
+import java.util.logging.Level;
 import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.ResultSet;
-import java.sql.PreparedStatement;
+import java.util.logging.Logger;
 
-public class DataBaseHandler extends Configs{
-    Connection dbConnection;
-    public Connection getDbConnection()
-            throws ClassNotFoundException, SQLException {
-        String connectionString = "jdbc:mysql://" + dbHost + ":"
-                + dbPort + "/" + dbName;
+public class DataBaseHandler{
+    public static DataBaseHandler da = new DataBaseHandler("jdbc:mysql://localhost:3306/FitnessPro", "root", "KAK2004.");
+    public Connection connection;
+    private static Connection connection2;
 
-        Class.forName("com.mysql.cj.jdbc.Driver");
-
-        dbConnection = DriverManager.getConnection(connectionString,
-                dbUser, dbPass);
-        return dbConnection;
+    public static DataBaseHandler getDataBaseHandler() {
+        return da;
     }
 
-   public ResultSet getUser(User user) {
-       ResultSet resSet = null;
+    // first way connect to database
+    public DataBaseHandler(String dbUrl, String usr, String password) {
+        try {
+            connection = DriverManager.getConnection(dbUrl, usr, password);
+        } catch (SQLException e) {
+            System.out.println(e);
+        }
+    }
 
-       String select = "SELECT * FROM " + Constant.USER_TABLE + " WHERE " +
-               Constant.USERS_USERNAME + "=? AND " + Constant.USERS_PASSWORD + "=?";
-       try {
-           PreparedStatement prSt = getDbConnection().prepareStatement(select);
-           prSt.setString(1, user.getUserName());
-           prSt.setString(2, user.getPassword());
-
-           resSet = prSt.executeQuery();
-       } catch (SQLException e){
-           e.printStackTrace();
-       } catch (ClassNotFoundException e){
-           e.printStackTrace();
-       }
-       return resSet;
-   }
-
-
+    // second way of connecting with database
+    public static Connection getConnect() {
+        try {
+            connection2 = DriverManager.getConnection("jdbc:mysql://localhost:3306/FitnessPro", "root", "KAK2004.");
+        } catch (SQLException e) {
+            Logger.getLogger(DataBaseHandler.class.getName()).log(Level.SEVERE, null, e);
+        }
+        return connection2;
+    }
 //
+//    public static Connection dbConnection;
+//    public Connection connection;
+//
+//    public DataBaseHandler(String dbUrl, String usr, String password) {
+//        try {
+//            connection = DriverManager.getConnection(dbUrl, usr, password);
+//        } catch (SQLException e) {
+//            System.out.println(e);
+//        }
+//    }
+//
+//    public static Connection getDbConnection() {
+//        try {
+//            dbConnection = DriverManager.getConnection("jdbc:postgresql://localhost:8080/fintess", "postgres", "janara2004");
+//        } catch (SQLException e) {
+//            Logger.getLogger(DataBaseHandler.class.getName()).log(Level.SEVERE, null, e);
+//        }
+//        return dbConnection;
+//    }
+
+
 }
-
-
-
-
-
-
