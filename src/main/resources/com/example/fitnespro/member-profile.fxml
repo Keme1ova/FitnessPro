@@ -16,32 +16,32 @@
          </VBox>
          <Pane layoutX="285.0" layoutY="210.0" prefHeight="509.0" prefWidth="933.0" style="-fx-background-color: WHITE; -fx-border-radius: 99;" styleClass="box" stylesheets="@base1.css">
             <children>
-               <Text layoutX="69.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+               <Text layoutX="69.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id">
                   <font>
                      <Font name="System Bold" size="18.0" />
                   </font>
                </Text>
-               <Text layoutX="69.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SURNAME">
+               <Text layoutX="69.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nachname">
                   <font>
                      <Font name="System Bold" size="18.0" />
                   </font>
                </Text>
-               <Text layoutX="69.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME">
+               <Text layoutX="69.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
                   <font>
                      <Font name="System Bold" size="18.0" />
                   </font>
                </Text>
-               <Text layoutX="69.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTACT">
+               <Text layoutX="69.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefonnummer">
                   <font>
                      <Font name="System Bold" size="18.0" />
                   </font>
                </Text>
-               <Text layoutX="450.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMBERSHIP">
+               <Text layoutX="450.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mitgliedschaft">
                   <font>
                      <Font name="System Bold" size="18.0" />
                   </font>
                </Text>
-               <Text layoutX="450.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GROUP">
+               <Text layoutX="450.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gruppe">
                   <font>
                      <Font name="System Bold" size="18.0" />
                   </font>
@@ -51,17 +51,17 @@
                      <Font name="System Bold" size="18.0" />
                   </font>
                </Text>
-               <Text layoutX="450.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="START">
+               <Text layoutX="450.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beginnen">
                   <font>
                      <Font name="System Bold" size="18.0" />
                   </font>
                </Text>
-               <Text layoutX="450.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="END">
+               <Text layoutX="450.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ende">
                   <font>
                      <Font name="System Bold" size="18.0" />
                   </font>
                </Text>
-               <Text layoutX="69.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENDER">
+               <Text layoutX="69.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
                   <font>
                      <Font name="System Bold" size="18.0" />
                   </font>

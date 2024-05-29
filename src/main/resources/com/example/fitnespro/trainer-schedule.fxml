@@ -8,17 +8,17 @@
         <VBox>
             <fx:include source="base.fxml"/>
         </VBox>
-        <Label fx:id="trainerName" layoutX="289.0" layoutY="55.0" style="-fx-font-size: 30; -fx-font-family: Montserrat; -fx-font-weight: 400;" text="Trainers" />
+        <Label fx:id="trainerName" layoutX="289.0" layoutY="55.0" style="-fx-font-size: 30; -fx-font-family: Montserrat; -fx-font-weight: 400;" text="Trainern" />
         <TableView fx:id="trainerTable" layoutX="260.0" layoutY="150.0" prefHeight="544.0" prefWidth="1163.0">
             <columns>
-                <TableColumn fx:id="time" prefWidth="100.0" text="Time" />
-                <TableColumn fx:id="Monday" prefWidth="130.0" text="Mon" />
-                <TableColumn fx:id="Tuesday" prefWidth="130.0" text="Tue" />
-                <TableColumn fx:id="Wednesday" prefWidth="130.0" text="Wed" />
-                <TableColumn fx:id="Thursday" prefWidth="130.0" text="Thu" />
-                <TableColumn fx:id="Friday" prefWidth="130.0" text="Fri" />
-                <TableColumn fx:id="Saturday" prefWidth="130.0" text="Sat" />
-                <TableColumn fx:id="Sunday" prefWidth="130.0" text="Sun" />
+                <TableColumn fx:id="time" prefWidth="100.0" text="Zeit" />
+                <TableColumn fx:id="Monday" prefWidth="130.0" text="Montag" />
+                <TableColumn fx:id="Tuesday" prefWidth="130.0" text="Dienstag" />
+                <TableColumn fx:id="Wednesday" prefWidth="130.0" text="Mittwoch" />
+                <TableColumn fx:id="Thursday" prefWidth="130.0" text="Donnerstag" />
+                <TableColumn fx:id="Friday" prefWidth="130.0" text="Freitag" />
+                <TableColumn fx:id="Saturday" prefWidth="130.0" text="Samstag" />
+                <TableColumn fx:id="Sunday" prefWidth="130.0" text="Sonntag" />
             </columns>
         </TableView>
 

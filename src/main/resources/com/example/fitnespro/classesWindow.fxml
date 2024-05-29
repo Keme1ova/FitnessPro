@@ -19,7 +19,7 @@
                 <Font size="22.0" />
             </font>
         </Text>
-        <Text fill="#828282" layoutX="311.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROOM">
+        <Text fill="#828282" layoutX="311.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ZIMMER">
             <font>
                 <Font size="22.0" />
             </font>
@@ -47,18 +47,18 @@
                 </Label>
             </children>
         </Pane>
-        <Text fill="#828282" layoutX="91.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLACES">
+        <Text fill="#828282" layoutX="91.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SETZT">
             <font>
                 <Font size="22.0" />
             </font>
         </Text>
-        <Text fill="#828282" layoutX="262.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AVAILABLE PLACES">
+        <Text fill="#828282" layoutX="262.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VERFÜGBARE PLÄTZE">
             <font>
                 <Font size="22.0" />
             </font>
         </Text>
-        <Button fx:id="deletePlace" layoutX="262.0" layoutY="302.0" mnemonicParsing="false" onAction="#deletePlace" prefHeight="43.0" prefWidth="179.0" style="-fx-background-color: white; -fx-border-color: #0d1d80; -fx-font-weight: 900; -fx-border-radius: 5;" text="DELETE 1 PLACE" textFill="#0d1d80" />
-        <Button fx:id="bookPlace" layoutX="38.0" layoutY="302.0" mnemonicParsing="false" onAction="#bookPlace" prefHeight="43.0" prefWidth="179.0" style="-fx-background-color: white; -fx-border-color: #0d1d80; -fx-font-weight: 900; -fx-border-radius: 5;" text="BOOK 1 PLACE" textFill="#0d1d80" />
+        <Button fx:id="deletePlace" layoutX="262.0" layoutY="302.0" mnemonicParsing="false" onAction="#deletePlace" prefHeight="43.0" prefWidth="179.0" style="-fx-background-color: white; -fx-border-color: #0d1d80; -fx-font-weight: 900; -fx-border-radius: 5;" text="1 ORT LÖSCHEN" textFill="#0d1d80" />
+        <Button fx:id="bookPlace" layoutX="38.0" layoutY="302.0" mnemonicParsing="false" onAction="#bookPlace" prefHeight="43.0" prefWidth="179.0" style="-fx-background-color: white; -fx-border-color: #0d1d80; -fx-font-weight: 900; -fx-border-radius: 5;" text="BUCHEN SIE 1 ORT" textFill="#0d1d80" />
         <Label fx:id="dateOfWorkout" alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="19.0" text="workout" textFill="#1924a3">
             <font>
                 <Font size="20.0" />

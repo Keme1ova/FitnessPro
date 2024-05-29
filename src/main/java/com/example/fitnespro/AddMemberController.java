@@ -75,25 +75,21 @@ public class AddMemberController {
                 preparedStatement.setString(7, genderField.getText());
                 preparedStatement.setDate(8,(Date) startField.getDayCellFactory());
                 preparedStatement.setDate(9,(Date) endField.getDayCellFactory());
-//
-//                java.sql.Date sqlDate = java.sql.Date.valueOf(startField.getAccessibleText());
-//                preparedStatement.setDate(8, sqlDate);
-//                java.sql.Date sqlDate1 = java.sql.Date.valueOf(endField.getAccessibleText());
-//                preparedStatement.setDate(9, sqlDate1);
+
 
                 // Выполняем запрос
                 int rowsAffected = preparedStatement.executeUpdate();
 
                 if (rowsAffected > 0) {
-                    resultLabel.setText("Member added successfully!");
+                    resultLabel.setText("Mitglied erfolgreich hinzugefügt!");
                 } else {
-                    resultLabel.setText("Error adding member.");
+                    resultLabel.setText("Fehler beim Hinzufügen des Mitglieds.");
                 }
             }
 
         } catch (SQLException e) {
             e.printStackTrace();
-            resultLabel.setText("Database error.");
+            resultLabel.setText("Datenbankfehler.");
 
         } finally {
             // Закрываем ресурсы в блоке finally

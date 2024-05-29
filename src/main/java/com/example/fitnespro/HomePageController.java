@@ -23,25 +23,28 @@ public class HomePageController implements Initializable {
     @FXML
     private Button exitButton;
 
-
+    public void exit(ActionEvent event) {
+        Stage stage = (Stage) exitButton.getScene().getWindow();
+        stage.close();
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         TreeItem<String> menuRoot = new TreeItem<>("root");
 
-        TreeItem<String> rootItemHome = new TreeItem<>("Home", new ImageView(new Image(getClass().getResourceAsStream("images/home.png"))));
-        TreeItem<String> rootItemMembers = new TreeItem<>("Members", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
-        TreeItem<String> rootItemStaff = new TreeItem<>("Staff", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
-        TreeItem<String> rootItemSchedule = new TreeItem<>("Schedule", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
-        TreeItem<String> rootItemPayments = new TreeItem<>("Payments", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
-        TreeItem<String> rootItemPrice = new TreeItem<>("Price", new ImageView(new Image(getClass().getResourceAsStream("images/pay.png"))));
+        TreeItem<String> rootItemHome = new TreeItem<>("Homepage", new ImageView(new Image(getClass().getResourceAsStream("images/home.png"))));
+        TreeItem<String> rootItemMembers = new TreeItem<>("Mitglieder", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
+        TreeItem<String> rootItemStaff = new TreeItem<>("Personal", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
+        TreeItem<String> rootItemSchedule = new TreeItem<>("Zeitplan ", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
+        TreeItem<String> rootItemPayments = new TreeItem<>("Zahlungen", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
+        TreeItem<String> rootItemPrice = new TreeItem<>("Preis", new ImageView(new Image(getClass().getResourceAsStream("images/pay.png"))));
 
-        TreeItem<String> itemMembersAll = new TreeItem<>("All members", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
-        TreeItem<String> itemMembersAdd = new TreeItem<>("Add a member", new ImageView(new Image(getClass().getResourceAsStream("images/person_add.png"))));
-        TreeItem<String> itemMembersProfile = new TreeItem<>("Member's profile", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
+        TreeItem<String> itemMembersAll = new TreeItem<>("Alle Mitglieder", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
+        TreeItem<String> itemMembersAdd = new TreeItem<>("Mitglied hinzuzufügen", new ImageView(new Image(getClass().getResourceAsStream("images/person_add.png"))));
+        TreeItem<String> itemMembersProfile = new TreeItem<>("Mitgliederprofil", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
 
-        TreeItem<String> itemScheduleClass = new TreeItem<>("Classes", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
-        TreeItem<String> itemSchedulePersonal = new TreeItem<>("Personal classes", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
+        TreeItem<String> itemScheduleClass = new TreeItem<>("Training", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
+        TreeItem<String> itemSchedulePersonal = new TreeItem<>("Personal Training", new ImageView(new Image(getClass().getResourceAsStream("images/person.png"))));
 
         menuRoot.getChildren().addAll(rootItemHome, rootItemMembers, rootItemStaff, rootItemSchedule, rootItemPayments, rootItemPrice);
         rootItemMembers.getChildren().addAll(itemMembersAll, itemMembersAdd, itemMembersProfile);
@@ -57,7 +60,7 @@ public class HomePageController implements Initializable {
         if (item != null) {
             System.out.printf(item.getValue());
         }
-        if (item != null && "Personal classes".equals(item.getValue())) {
+        if (item != null && "Personal Training".equals(item.getValue())) {
             Stage stage = (Stage) item.getGraphic().getScene().getWindow();
             stage.close();
             Stage stageNew = new Stage();
@@ -68,7 +71,7 @@ public class HomePageController implements Initializable {
             stageNew.setScene(scene);
             stageNew.show();
         }
-        if (item != null && "Add a member".equals(item.getValue())) {
+        if (item != null && "Mitglied hinzuzufügen".equals(item.getValue())) {
             Stage stage = (Stage) item.getGraphic().getScene().getWindow();
             stage.close();
             Stage stageNew = new Stage();
@@ -79,7 +82,7 @@ public class HomePageController implements Initializable {
             stageNew.setScene(scene);
             stageNew.show();
         }
-        if (item.getValue() == "All members") {
+        if (item.getValue() == "Alle Mitglieder") {
             Stage stage = (Stage) item.getGraphic().getScene().getWindow();
             stage.close();
             Stage stageNew = new Stage();
@@ -90,7 +93,7 @@ public class HomePageController implements Initializable {
             stageNew.setScene(scene);
             stageNew.show();
         }
-        if (item.getValue() == "Payments") {
+        if (item.getValue() == "Zahlungen") {
             Stage stage = (Stage) item.getGraphic().getScene().getWindow();
             stage.close();
             Stage stageNew = new Stage();
@@ -101,7 +104,7 @@ public class HomePageController implements Initializable {
             stageNew.setScene(scene);
             stageNew.show();
         }
-        if (item.getValue() == "Classes") {
+        if (item.getValue() == "Training") {
             Stage stage = (Stage) item.getGraphic().getScene().getWindow();
             stage.close();
             Stage stageNew = new Stage();
@@ -112,7 +115,7 @@ public class HomePageController implements Initializable {
             stageNew.setScene(scene);
             stageNew.show();
         }
-        if (item.getValue() == "Home") {
+        if (item.getValue() == "Homepage") {
             Stage stage = (Stage) item.getGraphic().getScene().getWindow();
             stage.close();
             Stage stageNew = new Stage();
@@ -123,7 +126,7 @@ public class HomePageController implements Initializable {
             stageNew.setScene(scene);
             stageNew.show();
         }
-        if (item.getValue() == "Staff") {
+        if (item.getValue() == "Personal") {
             Stage stage = (Stage) item.getGraphic().getScene().getWindow();
             stage.close();
             Stage stageNew = new Stage();
@@ -134,7 +137,7 @@ public class HomePageController implements Initializable {
             stageNew.setScene(scene);
             stageNew.show();
         }
-        if (item.getValue() == "Member's profile") {
+        if (item.getValue() == "Mitgliederprofil") {
             Stage stage = (Stage) item.getGraphic().getScene().getWindow();
             stage.close();
             Stage stageNew = new Stage();
@@ -145,7 +148,7 @@ public class HomePageController implements Initializable {
             stageNew.setScene(scene);
             stageNew.show();
         }
-        if (item.getValue() == "Price") {
+        if (item.getValue() == "Preis") {
             Stage stage = (Stage) item.getGraphic().getScene().getWindow();
             stage.close();
             Stage stageNew = new Stage();
@@ -158,8 +161,5 @@ public class HomePageController implements Initializable {
         }
     }
 
-    public void exit(ActionEvent event) {
-        Stage stage = (Stage) exitButton.getScene().getWindow();
-        stage.close();
-    }
+
 }

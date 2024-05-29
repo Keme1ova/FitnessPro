@@ -11,22 +11,22 @@
 <AnchorPane prefHeight="660.0" prefWidth="12110.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fitnespro.AllMembersController">
     <children>
         <TextField fx:id="nameFilter" layoutX="400.0" layoutY="22.0" prefHeight="34.0" prefWidth="361.0" />
-        <Button layoutX="720.0" layoutY="22.0" minHeight="21.0" onAction="#handleNameFilter" prefHeight="34.0" prefWidth="89.0" style="-fx-background-color: #1172B9;" text="Search" textFill="WHITE" />
+        <Button layoutX="720.0" layoutY="22.0" minHeight="21.0" onAction="#handleNameFilter" prefHeight="34.0" prefWidth="89.0" style="-fx-background-color: #1172B9;" text="Suche" textFill="WHITE" />
         <VBox>
             <fx:include source="base.fxml" />
         </VBox>
-        <Text layoutX="299.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-font-family: Montserrat; -fx-font-weight: 400;" text="ALL MEMBERS" />
+        <Text layoutX="299.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-font-family: Montserrat; -fx-font-weight: 400;" text="Alle Mitglieder" />
         <TableView fx:id="AllMembersTable" layoutX="260.0" layoutY="180.0" prefHeight="544.0" prefWidth="1363.0">
             <columns>
                 <TableColumn fx:id="id_mem" prefWidth="110.0" text="ID" />
-                <TableColumn fx:id="lastname" prefWidth="130.0" text="Surname" />
+                <TableColumn fx:id="lastname" prefWidth="130.0" text="Nachname" />
                 <TableColumn fx:id="name" prefWidth="130.0" text="Name" />
-                <TableColumn fx:id="contact" prefWidth="150.0" text="Contact" />
-                <TableColumn fx:id="group_member" prefWidth="120.0" text="Group" />
-                <TableColumn fx:id="membership" prefWidth="140.0" text="Membership" />
+                <TableColumn fx:id="contact" prefWidth="150.0" text="Telefonnummer" />
+                <TableColumn fx:id="group_member" prefWidth="120.0" text="Gruppe" />
+                <TableColumn fx:id="membership" prefWidth="140.0" text="Mitgliedschaft" />
                 <TableColumn fx:id="trainer" prefWidth="120.0" text="Trainer" />
-                <TableColumn fx:id="start_ab" prefWidth="135.0" text="Start Date" />
-                <TableColumn fx:id="end_ab" prefWidth="135.0" text="End Date" />
+                <TableColumn fx:id="start_ab" prefWidth="135.0" text="Beginnen" />
+                <TableColumn fx:id="end_ab" prefWidth="135.0" text="Ende" />
 
             </columns>
         </TableView>

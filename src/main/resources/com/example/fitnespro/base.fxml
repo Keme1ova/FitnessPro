@@ -18,6 +18,6 @@
                 <Image url="@images/LOGO.png" />
             </image>
         </ImageView>
-        <Button fx:id="exitButton" layoutX="32.0" layoutY="722.0" mnemonicParsing="false" onAction="#exit" styleClass="exitBtn" text="Exit" />
+        <Button fx:id="exitButton" layoutX="32.0" layoutY="722.0" mnemonicParsing="false" onAction="#exit" styleClass="exitBtn" text="Ausfahrt" />
     </children>
 </AnchorPane>

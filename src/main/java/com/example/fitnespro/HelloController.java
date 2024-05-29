@@ -32,8 +32,6 @@ public class HelloController {
     @FXML
     void initialize() {
 
-//        DataBaseHandler dbHandler = new DataBaseHandler();
-
 //       Вход в систему
         signIn.setOnAction (event -> {
             String loginText = login_field.getText().trim() ;
